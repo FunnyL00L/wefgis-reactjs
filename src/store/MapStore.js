@@ -19,6 +19,12 @@ export const useSidebarStore = create((set) => ({
   // setMap: (map) => set({ map }),
 }));
 
+const basemaps = [
+  { name: 'OpenStreetMap', cesiumId: 3, layer: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {/* ... */}) },
+  // Add other basemaps with their Cesium IDs
+];
+
+
 export const useMapStore = create((set) => ({
   // state untuk menyimpan layer yang ada
   layers: [

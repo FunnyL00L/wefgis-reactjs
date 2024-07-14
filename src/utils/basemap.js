@@ -6,7 +6,7 @@ export const baseMaps = [
     layer: L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution: "©OpenStreetMap Contributors",
     }),
-    imageUrl: "/public/assets/icon-basemap/openstreetmap_de.png",
+    imageUrl: "/public/icon-basemap/openstreetmap_de.png",
   },
   {
     name: "Google Street Map",
@@ -15,7 +15,7 @@ export const baseMaps = [
       subdomains: ["mt0", "mt1", "mt2", "mt3"],
       maxZoom: 20,
     }),
-    imageUrl: "/public/assets/icon-basemap/google-streets.png",
+    imageUrl: "/public/icon-basemap/google-streets.png",
   },
   {
     name: "Google Satellite Map",
@@ -24,16 +24,18 @@ export const baseMaps = [
       subdomains: ["mt0", "mt1", "mt2", "mt3"],
       maxZoom: 20,
     }),
-    imageUrl: "/public/assets/icon-basemap/google-earth.png",
+    imageUrl: "/public/icon-basemap/google-earth.png",
   },
   {
     name: "Google Hybrid Map",
-    layer: L.tileLayer("http://{s}.google.com/vt?lyrs=s,h&x={x}&y={y}&z={z}", {
+    layer: L.tileLayer("https://{s}.google.com/vt?lyrs=s,h&x={x}&y={y}&z={z}", {
       attribution: "©Google Hybrid Map",
       subdomains: ["mt0", "mt1", "mt2", "mt3"],
       maxZoom: 20,
     }),
-    imageUrl: "/public/assets/icon-basemap/google-hibrid.png",
+    imageUrl: "/public/icon-basemap/google-hibrid.png",
   },
+  // In your MapStore
+  
   // Add more basemaps here (optional)
 ];

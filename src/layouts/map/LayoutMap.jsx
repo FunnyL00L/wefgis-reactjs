@@ -8,10 +8,10 @@ const LayoutMap = () => {
     return (
         <div className="h-screen flex flex-col">
             <div className="flex-none">
-                <Navbar style={{ height: '2vh', width: '100%' }} />
+                <Navbar style={{ height: '2vh', width: '90%' }} />
             </div>
             <div className="flex-grow">
-                <MapComponent style={{ height: '98vh', width: '100%' }} />
+                <MapComponent style={{ height: '98vh', width: '80%' }} />
             </div>
         </div>
     );
